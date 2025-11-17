@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    const mongoUri = process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/libraryDB';
+    const mongoUri = process.env.MONGO_URI || 'mongodb+srv://chaitu:mongo-chaitu123@cluster0.ec8lngb.mongodb.net/library?retryWrites=true&w=majority';
 
     // Modern Mongoose 7 connection (no deprecated options needed)
     await mongoose.connect(mongoUri);

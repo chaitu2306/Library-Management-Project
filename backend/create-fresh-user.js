@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 // Connect directly to MongoDB without using the User model
-mongoose.connect('mongodb://localhost:27017/library').then(async () => {
+mongoose.connect('mongodb+srv://chaitu:mongo-chaitu123@cluster0.ec8lngb.mongodb.net/library?retryWrites=true&w=majority').then(async () => {
   console.log('Connected to MongoDB');
   
   try {

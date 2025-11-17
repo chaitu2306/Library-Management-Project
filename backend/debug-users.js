@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 const User = require('./models/User');
 
-mongoose.connect('mongodb://localhost:27017/library', {
+mongoose.connect('mongodb+srv://chaitu:mongo-chaitu123@cluster0.ec8lngb.mongodb.net/library?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => {

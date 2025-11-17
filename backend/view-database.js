@@ -5,7 +5,7 @@ const Book = require('./models/Book');
 const Admin = require('./models/Admin');
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/libraryDB');
+mongoose.connect('mongodb+srv://chaitu:mongo-chaitu123@cluster0.ec8lngb.mongodb.net/library?retryWrites=true&w=majority');
 
 async function viewDatabase() {
   try {

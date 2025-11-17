@@ -4,7 +4,7 @@ const Book = require('./models/Book');
 // MongoDB connection
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb://127.0.0.1:27017/libraryDB');
+    await mongoose.connect('mongodb+srv://chaitu:mongo-chaitu123@cluster0.ec8lngb.mongodb.net/library?retryWrites=true&w=majority');
     console.log('✅ Connected to MongoDB: libraryDB');
   } catch (err) {
     console.error('❌ MongoDB connection error:', err);
