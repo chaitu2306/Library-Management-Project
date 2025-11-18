@@ -1,5 +1,6 @@
-FROM nginx:latest
+FROM nginx:stable-alpine
 RUN rm -rf /usr/share/nginx/html/*
 COPY public /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html/index.html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
